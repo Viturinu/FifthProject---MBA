@@ -81,9 +81,25 @@ a {
     color: inherit;
 }
 
+a:hover{
+    background: linear-gradient(
+        90deg,
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 ul[role="list"] {
     /* Eu preciso definir este atributo de role="list" no html, pois isso vai deifinir o papel dessa ul como list e aqui tiraremos o que quisermos visualmente - fazer dessa forma, pois antes, quando tiravamos direto no ul, alguns navegadores perdia a referencia que aquilo era uma lista, "virava apenas um tanto de texto em bloco" e perdia o signficado semantico para o navegador*/
     list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
 }
 
 @media (width>=80em) {
