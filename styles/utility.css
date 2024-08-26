@@ -16,7 +16,7 @@
 
 .container {
     --max-width: 375px;
-    width: min(var(--max-width), 100% - var(--px-lg));
+    width: min(var(--max-width), 100% - var(--px-lg)); /*mínimo será max-width ou cálculo feito, mas se passar de 375 automaticamente está no @media lá embaixo, pois aqui o minimo é o maximo*/
     margin-inline: auto;
     /* border: solid violet; */
 }
